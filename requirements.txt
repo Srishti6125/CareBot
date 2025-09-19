@@ -1,0 +1,10 @@
+fastapi>=0.115.0
+uvicorn>=0.32.0
+langdetect>=1.0.9
+deep-translator>=1.11.4
+youtube-search-python>=1.6.6
+transformers>=4.35.0
+tokenizers>=0.14.1
+textblob>=0.17.1
+torch>=2.5.1
+rapidfuzz>=3.10.0
