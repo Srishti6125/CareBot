@@ -8,17 +8,19 @@ app = FastAPI(title="CareBot API", version="1.0")
 
 # ------------------ CORS Setup ------------------
 origins = [
-    "http://localhost:3000",  # your frontend origin
+    "http://localhost:3000",       # React dev server
     "http://127.0.0.1:3000",
-    # you can add your deployed frontend URL here
+    "https://carebot-fe1t.onrender.com",  # backend itself
+    # Add your deployed frontend URL here, e.g.:
+    # "https://your-frontend.onrender.com"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,       # allow only these origins (use "*" for all, dev only)
+    allow_origins=["*"],       # allow everything (safe for dev only)
     allow_credentials=True,
-    allow_methods=["*"],         # allow GET, POST, etc.
-    allow_headers=["*"],         # allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 # -------------------------------------------------
 
