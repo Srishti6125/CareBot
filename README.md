@@ -56,7 +56,3 @@ Collabs welcome! You can help by:
 - Building a fun frontend for people to chat with CareBot  
 
 ---
-
-## ⚖️ License  
-
-MIT License © 2025  
